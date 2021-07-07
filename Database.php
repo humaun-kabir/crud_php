@@ -66,5 +66,22 @@
 
         }
 
+
+        //delete data into database
+
+        public function delete($query){
+
+            $delete_row = $this->link->query($query) or die($this->link->error.__LINE__);
+
+            if($delete_row){
+
+                header("Location: index.php?msg=".urldecode('Data deleted successfully'));
+                exit();
+            }else{
+                die("Error: (".$this->link->error.")".$this->link->error);
+            }
+
+        }
+
     }
 ?>

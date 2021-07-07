@@ -21,7 +21,8 @@
 ?>
 
 <table class="tmain">
-    <tr >
+    <tr>
+        <th>SL</th>
         <th>Name</th>
         <th>Email</th>
         <th>Skill</th>
@@ -29,9 +30,13 @@
     </tr>
 
     <?php if($read){ ?>
-        <?php while($row = $read->fetch_assoc()) { ?>
+
+        <?php
+        $sl=1;
+        while($row = $read->fetch_assoc()) { ?>
 
     <tr>
+        <td><?php echo $sl++; ?></td>
         <td><?php echo $row['name']; ?></td>
         <td><?php echo $row['email']; ?></td>
         <td><?php echo $row['skill']; ?></td>

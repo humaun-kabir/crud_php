@@ -57,6 +57,9 @@
         .tmain td{
             text-align:center;
         }
+        table.tmain tr:nth-child(2n){
+            background:#e6e6e6; height:30px;
+        }
     </style>
 </head>
 
