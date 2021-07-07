@@ -49,6 +49,14 @@
         #text{
             text-align:center;
         }
+        .tmain{
+            width:100%;
+            border:1px solid;
+            margin: 20px 0;
+        }
+        .tmain td{
+            text-align:center;
+        }
     </style>
 </head>
 
